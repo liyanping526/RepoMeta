@@ -1,0 +1,65 @@
+pink9@LAPTOP-HN4DCOB6 MINGW64 ~
+$ cd OneDrive/Desktop
+
+pink9@LAPTOP-HN4DCOB6 MINGW64 ~/OneDrive/Desktop
+$ git clone https://github.com/liyanping526/Repo1.git
+Cloning into 'Repo1'...
+warning: You appear to have cloned an empty repository.
+
+pink9@LAPTOP-HN4DCOB6 MINGW64 ~/OneDrive/Desktop
+$ cd Repo1
+
+pink9@LAPTOP-HN4DCOB6 MINGW64 ~/OneDrive/Desktop/Repo1 (master)
+$ touch HelloWorld.java
+
+pink9@LAPTOP-HN4DCOB6 MINGW64 ~/OneDrive/Desktop/Repo1 (master)
+$ neno HelloWorld.java
+bash: neno: command not found
+
+pink9@LAPTOP-HN4DCOB6 MINGW64 ~/OneDrive/Desktop/Repo1 (master)
+$ nano HelloWorld.java
+
+pink9@LAPTOP-HN4DCOB6 MINGW64 ~/OneDrive/Desktop/Repo1 (master)
+$ javac HelloWorld.java
+bash: javac: command not found
+
+pink9@LAPTOP-HN4DCOB6 MINGW64 ~/OneDrive/Desktop/Repo1 (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        HelloWorld.java
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+pink9@LAPTOP-HN4DCOB6 MINGW64 ~/OneDrive/Desktop/Repo1 (master)
+$ git add .
+warning: LF will be replaced by CRLF in HelloWorld.java.
+The file will have its original line endings in your working directory
+
+pink9@LAPTOP-HN4DCOB6 MINGW64 ~/OneDrive/Desktop/Repo1 (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   HelloWorld.java
+
+
+pink9@LAPTOP-HN4DCOB6 MINGW64 ~/OneDrive/Desktop/Repo1 (master)
+$ git commit -m "print Hello World"
+[master (root-commit) 8607c15] print Hello World
+ 1 file changed, 6 insertions(+)
+ create mode 100644 HelloWorld.java
+
+pink9@LAPTOP-HN4DCOB6 MINGW64 ~/OneDrive/Desktop/Repo1 (master)
+$ git remote add origin https://github.com/liyanping526/Repo1.git
+fatal: remote origin already exists.
+
+pink9@LAPTOP-HN4DCOB6 MINGW64 ~/OneDrive/Desktop/Repo1 (master)
+$ git push -u origin main
